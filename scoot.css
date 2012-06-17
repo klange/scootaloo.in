@@ -1,0 +1,115 @@
+@-moz-keyframes scootaloo-spinning {
+  0% {
+    -moz-transform: rotate(-20deg);
+  }
+  50% {
+    -moz-transform: rotate(20deg);
+  }
+  100% {
+    -moz-transform: rotate(-20deg);  
+  }
+}
+@-moz-keyframes scootaloo-movement {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+@-webkit-keyframes scootaloo-spinning {
+  0% {
+    -webkit-transform: rotate(-20deg);
+  }
+  50% {
+    -webkit-transform: rotate(20deg);
+  }
+  100% {
+    -webkit-transform: rotate(-20deg);  
+  }
+}
+@-webkit-keyframes scootaloo-movement {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+@-ms-keyframes scootaloo-spinning {
+  0% {
+    -ms-transform: rotate(-20deg);
+  }
+  50% {
+    -ms-transform: rotate(20deg);
+  }
+  100% {
+    -ms-transform: rotate(-20deg);  
+  }
+}
+@-ms-keyframes scootaloo-movement {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+@keyframes scootaloo-spinning {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);  
+  }
+}
+@keyframes scootaloo-movement {
+  0% {
+    left: -30%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+.scootaloo {
+     -moz-animation: scootaloo-spinning 1.4s infinite;
+     -webkit-animation: scootaloo-spinning 1.4s infinite;
+     -ms-animation: scootaloo-spinning 1.4s infinite;
+     animation: scootaloo-spinning 1.4s infinite;
+    width: 70%;
+}
+.scootaloo-container {
+    padding: 20px;
+    width: 40%;
+    position: absolute;
+    bottom: -10%;
+    -moz-animation: scootaloo-movement 2.8s infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-timing-function: linear;
+    -webkit-animation: scootaloo-movement 2.8s infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+    -ms-animation: scootaloo-movement 2.8s infinite;
+    -ms-animation-direction: normal;
+    -ms-animation-timing-function: linear;
+    animation: scootaloo-movement 2.8s infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+.page {
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    overflow: hidden;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-image: url(bgs/1.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
