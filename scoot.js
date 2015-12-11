@@ -27,9 +27,10 @@ window.onload = function() {
     }
     var j = 0;
     /* Preload the backgrounds */
+    var preload = new Array();
     while (j != n) {
-        preload = new Image();
-        preload.src = backgrounds[j];
+        preload[j] = new Image();
+        preload[j].src = backgrounds[j];
         j++;
     }
     /* Reset the CSS animation */

@@ -110,6 +110,11 @@ body {
     background-repeat: no-repeat;
     background-image: url(bgs/1.jpg);
     background-size: cover;
+    background-position: center center;
     height: 100%;
     width: 100%;
+    min-height: 100%;
+}
+html {
+    height: 100%;
 }
